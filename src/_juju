@@ -1,0 +1,1727 @@
+#compdef juju   
+function _juju {
+    
+    local line
+
+    _arguments -C \
+        "--help[Show help information]" \
+        "1: :(actions add-cloud add-credential add-k8s add-machine add-model add-relation add-space add-ssh add-storage add-subnet add-unit add-user agree agreements attach attach-resource attach-storage autoload-credentials backups bootstrap budget cached-images cancel-action change-user charm charm-resources clouds collect-metrics config consume controller-config controllers create-backup create-storage create-wallet credentials debug-hook debug-hooks debug-log deploy destroy-controller destroy-model detach-storage diff-bundle disable-command disable-user disabled-commands download-backup enable-command enable-destroy enable-ha enable-user export-bundle expose find-offers firewall-rules get-constraints get-model grant grant-cloud gui help help-tool hook-tool hook-tools import-filesystem import-ssh kill-controller list-actions list-agreements list-backups list-cached list-charm list-clouds list-controllers list-credentials list-disabled list-firewall list-machines list-models list-offers list-payloads list-plans list-regions list-resources list-spaces list-ssh list-storage list-subnets list-users list-wallets login logout machines metrics migrate model-config model-default model-defaults models offer offers payloads plans regions register relate remove-application remove-backup remove-cached remove-cloud remove-consumed remove-credential remove-k8s remove-machine remove-offer remove-relation remove-saas remove-ssh remove-storage remove-unit remove-user resolve resolved restore-backup resume-relation retry-provisioning revoke revoke-cloud run run-action scale-application scp set-constraints set-credential set-default set-firewall set-meter set-model set-plan set-series set-wallet show-action show-application show-backup show-cloud show-controller show-credential show-credentials show-machine show-model show-offer show-status show-storage show-user show-wallet sla spaces ssh ssh-keys status storage-pools subnets suspend-relation switch sync-agent sync-tools trust unexpose unregister update-cloud update-clouds update-credential update-public update-storage upgrade-charm upgrade-controller upgrade-gui upgrade-juju upgrade-model upgrade-series upload-backup users version wallets whoami)" \
+        "*::arg:->args"
+
+    case $line[1] in
+        
+        actions)
+            _juju_actions
+        ;;
+    
+        add-cloud)
+            _juju_add-cloud
+        ;;
+    
+        add-credential)
+            _juju_add-credential
+        ;;
+    
+        add-k8s)
+            _juju_add-k8s
+        ;;
+    
+        add-machine)
+            _juju_add-machine
+        ;;
+    
+        add-model)
+            _juju_add-model
+        ;;
+    
+        add-relation)
+            _juju_add-relation
+        ;;
+    
+        add-space)
+            _juju_add-space
+        ;;
+    
+        add-ssh)
+            _juju_add-ssh
+        ;;
+    
+        add-storage)
+            _juju_add-storage
+        ;;
+    
+        add-subnet)
+            _juju_add-subnet
+        ;;
+    
+        add-unit)
+            _juju_add-unit
+        ;;
+    
+        add-user)
+            _juju_add-user
+        ;;
+    
+        agree)
+            _juju_agree
+        ;;
+    
+        agreements)
+            _juju_agreements
+        ;;
+    
+        attach)
+            _juju_attach
+        ;;
+    
+        attach-resource)
+            _juju_attach-resource
+        ;;
+    
+        attach-storage)
+            _juju_attach-storage
+        ;;
+    
+        autoload-credentials)
+            _juju_autoload-credentials
+        ;;
+    
+        backups)
+            _juju_backups
+        ;;
+    
+        bootstrap)
+            _juju_bootstrap
+        ;;
+    
+        budget)
+            _juju_budget
+        ;;
+    
+        cached-images)
+            _juju_cached-images
+        ;;
+    
+        cancel-action)
+            _juju_cancel-action
+        ;;
+    
+        change-user)
+            _juju_change-user
+        ;;
+    
+        charm)
+            _juju_charm
+        ;;
+    
+        charm-resources)
+            _juju_charm-resources
+        ;;
+    
+        clouds)
+            _juju_clouds
+        ;;
+    
+        collect-metrics)
+            _juju_collect-metrics
+        ;;
+    
+        config)
+            _juju_config
+        ;;
+    
+        consume)
+            _juju_consume
+        ;;
+    
+        controller-config)
+            _juju_controller-config
+        ;;
+    
+        controllers)
+            _juju_controllers
+        ;;
+    
+        create-backup)
+            _juju_create-backup
+        ;;
+    
+        create-storage)
+            _juju_create-storage
+        ;;
+    
+        create-wallet)
+            _juju_create-wallet
+        ;;
+    
+        credentials)
+            _juju_credentials
+        ;;
+    
+        debug-hook)
+            _juju_debug-hook
+        ;;
+    
+        debug-hooks)
+            _juju_debug-hooks
+        ;;
+    
+        debug-log)
+            _juju_debug-log
+        ;;
+    
+        deploy)
+            _juju_deploy
+        ;;
+    
+        destroy-controller)
+            _juju_destroy-controller
+        ;;
+    
+        destroy-model)
+            _juju_destroy-model
+        ;;
+    
+        detach-storage)
+            _juju_detach-storage
+        ;;
+    
+        diff-bundle)
+            _juju_diff-bundle
+        ;;
+    
+        disable-command)
+            _juju_disable-command
+        ;;
+    
+        disable-user)
+            _juju_disable-user
+        ;;
+    
+        disabled-commands)
+            _juju_disabled-commands
+        ;;
+    
+        download-backup)
+            _juju_download-backup
+        ;;
+    
+        enable-command)
+            _juju_enable-command
+        ;;
+    
+        enable-destroy)
+            _juju_enable-destroy
+        ;;
+    
+        enable-ha)
+            _juju_enable-ha
+        ;;
+    
+        enable-user)
+            _juju_enable-user
+        ;;
+    
+        export-bundle)
+            _juju_export-bundle
+        ;;
+    
+        expose)
+            _juju_expose
+        ;;
+    
+        find-offers)
+            _juju_find-offers
+        ;;
+    
+        firewall-rules)
+            _juju_firewall-rules
+        ;;
+    
+        get-constraints)
+            _juju_get-constraints
+        ;;
+    
+        get-model)
+            _juju_get-model
+        ;;
+    
+        grant)
+            _juju_grant
+        ;;
+    
+        grant-cloud)
+            _juju_grant-cloud
+        ;;
+    
+        gui)
+            _juju_gui
+        ;;
+    
+        help)
+            _juju_help
+        ;;
+    
+        help-tool)
+            _juju_help-tool
+        ;;
+    
+        hook-tool)
+            _juju_hook-tool
+        ;;
+    
+        hook-tools)
+            _juju_hook-tools
+        ;;
+    
+        import-filesystem)
+            _juju_import-filesystem
+        ;;
+    
+        import-ssh)
+            _juju_import-ssh
+        ;;
+    
+        kill-controller)
+            _juju_kill-controller
+        ;;
+    
+        list-actions)
+            _juju_list-actions
+        ;;
+    
+        list-agreements)
+            _juju_list-agreements
+        ;;
+    
+        list-backups)
+            _juju_list-backups
+        ;;
+    
+        list-cached)
+            _juju_list-cached
+        ;;
+    
+        list-charm)
+            _juju_list-charm
+        ;;
+    
+        list-clouds)
+            _juju_list-clouds
+        ;;
+    
+        list-controllers)
+            _juju_list-controllers
+        ;;
+    
+        list-credentials)
+            _juju_list-credentials
+        ;;
+    
+        list-disabled)
+            _juju_list-disabled
+        ;;
+    
+        list-firewall)
+            _juju_list-firewall
+        ;;
+    
+        list-machines)
+            _juju_list-machines
+        ;;
+    
+        list-models)
+            _juju_list-models
+        ;;
+    
+        list-offers)
+            _juju_list-offers
+        ;;
+    
+        list-payloads)
+            _juju_list-payloads
+        ;;
+    
+        list-plans)
+            _juju_list-plans
+        ;;
+    
+        list-regions)
+            _juju_list-regions
+        ;;
+    
+        list-resources)
+            _juju_list-resources
+        ;;
+    
+        list-spaces)
+            _juju_list-spaces
+        ;;
+    
+        list-ssh)
+            _juju_list-ssh
+        ;;
+    
+        list-storage)
+            _juju_list-storage
+        ;;
+    
+        list-subnets)
+            _juju_list-subnets
+        ;;
+    
+        list-users)
+            _juju_list-users
+        ;;
+    
+        list-wallets)
+            _juju_list-wallets
+        ;;
+    
+        login)
+            _juju_login
+        ;;
+    
+        logout)
+            _juju_logout
+        ;;
+    
+        machines)
+            _juju_machines
+        ;;
+    
+        metrics)
+            _juju_metrics
+        ;;
+    
+        migrate)
+            _juju_migrate
+        ;;
+    
+        model-config)
+            _juju_model-config
+        ;;
+    
+        model-default)
+            _juju_model-default
+        ;;
+    
+        model-defaults)
+            _juju_model-defaults
+        ;;
+    
+        models)
+            _juju_models
+        ;;
+    
+        offer)
+            _juju_offer
+        ;;
+    
+        offers)
+            _juju_offers
+        ;;
+    
+        payloads)
+            _juju_payloads
+        ;;
+    
+        plans)
+            _juju_plans
+        ;;
+    
+        regions)
+            _juju_regions
+        ;;
+    
+        register)
+            _juju_register
+        ;;
+    
+        relate)
+            _juju_relate
+        ;;
+    
+        reload-spaces)
+            _juju_reload-spaces
+        ;;
+    
+        remove-application)
+            _juju_remove-application
+        ;;
+    
+        remove-backup)
+            _juju_remove-backup
+        ;;
+    
+        remove-cached)
+            _juju_remove-cached
+        ;;
+    
+        remove-cloud)
+            _juju_remove-cloud
+        ;;
+    
+        remove-consumed)
+            _juju_remove-consumed
+        ;;
+    
+        remove-credential)
+            _juju_remove-credential
+        ;;
+    
+        remove-k8s)
+            _juju_remove-k8s
+        ;;
+    
+        remove-machine)
+            _juju_remove-machine
+        ;;
+    
+        remove-offer)
+            _juju_remove-offer
+        ;;
+    
+        remove-relation)
+            _juju_remove-relation
+        ;;
+    
+        remove-saas)
+            _juju_remove-saas
+        ;;
+    
+        remove-ssh)
+            _juju_remove-ssh
+        ;;
+    
+        remove-storage)
+            _juju_remove-storage
+        ;;
+    
+        remove-unit)
+            _juju_remove-unit
+        ;;
+    
+        remove-user)
+            _juju_remove-user
+        ;;
+    
+        resolve)
+            _juju_resolve
+        ;;
+    
+        resolved)
+            _juju_resolved
+        ;;
+    
+        resources)
+            _juju_resources
+        ;;
+    
+        restore-backup)
+            _juju_restore-backup
+        ;;
+    
+        resume-relation)
+            _juju_resume-relation
+        ;;
+    
+        retry-provisioning)
+            _juju_retry-provisioning
+        ;;
+    
+        revoke)
+            _juju_revoke
+        ;;
+    
+        revoke-cloud)
+            _juju_revoke-cloud
+        ;;
+    
+        run)
+            _juju_run
+        ;;
+    
+        run-action)
+            _juju_run-action
+        ;;
+    
+        scale-application)
+            _juju_scale-application
+        ;;
+    
+        scp)
+            _juju_scp
+        ;;
+    
+        set-constraints)
+            _juju_set-constraints
+        ;;
+    
+        set-credential)
+            _juju_set-credential
+        ;;
+    
+        set-default)
+            _juju_set-default
+        ;;
+    
+        set-firewall)
+            _juju_set-firewall
+        ;;
+    
+        set-meter)
+            _juju_set-meter
+        ;;
+    
+        set-model)
+            _juju_set-model
+        ;;
+    
+        set-plan)
+            _juju_set-plan
+        ;;
+    
+        set-series)
+            _juju_set-series
+        ;;
+    
+        set-wallet)
+            _juju_set-wallet
+        ;;
+    
+        show-action)
+            _juju_show-action
+        ;;
+    
+        show-application)
+            _juju_show-application
+        ;;
+    
+        show-backup)
+            _juju_show-backup
+        ;;
+    
+        show-cloud)
+            _juju_show-cloud
+        ;;
+    
+        show-controller)
+            _juju_show-controller
+        ;;
+    
+        show-credential)
+            _juju_show-credential
+        ;;
+    
+        show-credentials)
+            _juju_show-credentials
+        ;;
+    
+        show-machine)
+            _juju_show-machine
+        ;;
+    
+        show-model)
+            _juju_show-model
+        ;;
+    
+        show-offer)
+            _juju_show-offer
+        ;;
+    
+        show-status)
+            _juju_show-status
+        ;;
+    
+        show-storage)
+            _juju_show-storage
+        ;;
+    
+        show-user)
+            _juju_show-user
+        ;;
+    
+        show-wallet)
+            _juju_show-wallet
+        ;;
+    
+        sla)
+            _juju_sla
+        ;;
+    
+        spaces)
+            _juju_spaces
+        ;;
+    
+        ssh)
+            _juju_ssh
+        ;;
+    
+        ssh-keys)
+            _juju_ssh-keys
+        ;;
+    
+        status)
+            _juju_status
+        ;;
+    
+        storage)
+            _juju_storage
+        ;;
+    
+        storage-pools)
+            _juju_storage-pools
+        ;;
+    
+        subnets)
+            _juju_subnets
+        ;;
+    
+        suspend-relation)
+            _juju_suspend-relation
+        ;;
+    
+        switch)
+            _juju_switch
+        ;;
+    
+        sync-agent)
+            _juju_sync-agent
+        ;;
+    
+        sync-tools)
+            _juju_sync-tools
+        ;;
+    
+        trust)
+            _juju_trust
+        ;;
+    
+        unexpose)
+            _juju_unexpose
+        ;;
+    
+        unregister)
+            _juju_unregister
+        ;;
+    
+        update-cloud)
+            _juju_update-cloud
+        ;;
+    
+        update-clouds)
+            _juju_update-clouds
+        ;;
+    
+        update-credential)
+            _juju_update-credential
+        ;;
+    
+        update-public)
+            _juju_update-public
+        ;;
+    
+        update-storage)
+            _juju_update-storage
+        ;;
+    
+        upgrade-charm)
+            _juju_upgrade-charm
+        ;;
+    
+        upgrade-controller)
+            _juju_upgrade-controller
+        ;;
+    
+        upgrade-gui)
+            _juju_upgrade-gui
+        ;;
+    
+        upgrade-juju)
+            _juju_upgrade-juju
+        ;;
+    
+        upgrade-model)
+            _juju_upgrade-model
+        ;;
+    
+        upgrade-series)
+            _juju_upgrade-series
+        ;;
+    
+        upload-backup)
+            _juju_upload-backup
+        ;;
+    
+        users)
+            _juju_users
+        ;;
+    
+        version)
+            _juju_version
+        ;;
+    
+        wallets)
+            _juju_wallets
+        ;;
+    
+        whoami)
+            _juju_whoami
+        ;;
+             
+    esac
+
+}
+
+
+function _juju_actions {
+    _arguments \
+            "--actions[List actions defined for an application.]"
+}
+
+function _juju_add-cloud {
+    _arguments \
+            "--add-cloud[Adds a cloud definition to Juju.]"
+}
+
+function _juju_add-credential {
+    _arguments \
+            "--add-credential[Adds or replaces credentials for a cloud, stored locally on this client.]"
+}
+
+function _juju_add-k8s {
+    _arguments \
+            "--add-k8s[Adds a k8s endpoint and credential to Juju.]"
+}
+
+function _juju_add-machine {
+    _arguments \
+            "--add-machine[Start a new, empty machine and optionally a container, or add a container to a machine.]"
+}
+
+function _juju_add-model {
+    _arguments \
+            "--add-model[Adds a hosted model.]"
+}
+
+function _juju_add-relation {
+    _arguments \
+            "--add-relation[Add a relation between two application endpoints.]"
+}
+
+function _juju_add-space {
+    _arguments \
+            "--add-space[Add a new network space.]"
+}
+
+function _juju_add-ssh {
+    _arguments \
+            "--add-ssh[key                   Adds a public SSH key to a model.]"
+}
+
+function _juju_add-storage {
+    _arguments \
+            "--add-storage[Adds unit storage dynamically.]"
+}
+
+function _juju_add-subnet {
+    _arguments \
+            "--add-subnet[Add an existing subnet to Juju.]"
+}
+
+function _juju_add-unit {
+    _arguments \
+            "--add-unit[Adds one or more units to a deployed application.]"
+}
+
+function _juju_add-user {
+    _arguments \
+            "--add-user[Adds a Juju user to a controller.]"
+}
+
+function _juju_agree {
+    _arguments \
+            "--agree[Agree to terms.]"
+}
+
+function _juju_agreements {
+    _arguments \
+            "--agreements[List user's agreements.]"
+}
+
+function _juju_attach {
+    _arguments \
+            "--attach                      - Alias for 'attach[resource'.]"
+}
+
+function _juju_attach-resource {
+    _arguments \
+            "--attach-resource[Update a resource for an application.]"
+}
+
+function _juju_attach-storage {
+    _arguments \
+            "--attach-storage[Attaches existing storage to a unit.]"
+}
+
+function _juju_autoload-credentials {
+    _arguments \
+            "--autoload-credentials[Attempts to automatically add or replace credentials for a cloud.]"
+}
+
+function _juju_backups {
+    _arguments \
+            "--backups[Displays information about all backups.]"
+}
+
+function _juju_bootstrap {
+    _arguments \
+            "--bootstrap[Initializes a cloud environment.]"
+}
+
+function _juju_budget {
+    _arguments \
+            "--budget[Update a budget.]"
+}
+
+function _juju_cached-images {
+    _arguments \
+            "--cached-images[Shows cached os images.]"
+}
+
+function _juju_cancel-action {
+    _arguments \
+            "--cancel-action[Cancel pending actions.]"
+}
+
+function _juju_change-user {
+    _arguments \
+            "--change-user[password          Changes the password for the current or specified Juju user.]"
+}
+
+function _juju_charm {
+    _arguments \
+            "--charm[DEPRECATED: Interact with charms.]"
+}
+
+function _juju_charm-resources {
+    _arguments \
+            "--charm-resources[Display the resources for a charm in the charm store.]"
+}
+
+function _juju_clouds {
+    _arguments \
+            "--clouds[Lists all clouds available to Juju.]"
+}
+
+function _juju_collect-metrics {
+    _arguments \
+            "--collect-metrics[Collect metrics on the given unit/application.]"
+}
+
+function _juju_config {
+    _arguments \
+            "--config[Gets, sets, or resets configuration for a deployed application.]"
+}
+
+function _juju_consume {
+    _arguments \
+            "--consume[Add a remote offer to the model.]"
+}
+
+function _juju_controller-config {
+    _arguments \
+            "--controller-config[Displays or sets configuration settings for a controller.]"
+}
+
+function _juju_controllers {
+    _arguments \
+            "--controllers[Lists all controllers.]"
+}
+
+function _juju_create-backup {
+    _arguments \
+            "--create-backup[Create a backup.]"
+}
+
+function _juju_create-storage {
+    _arguments \
+            "--create-storage[pool           Create or define a storage pool.]"
+}
+
+function _juju_create-wallet {
+    _arguments \
+            "--create-wallet[Create a new wallet.]"
+}
+
+function _juju_credentials {
+    _arguments \
+            "--credentials[Lists locally stored credentials for a cloud.]"
+}
+
+function _juju_debug-hook {
+    _arguments \
+            "--debug-hook[Alias for 'debug hooks'.]"
+}
+
+function _juju_debug-hooks {
+    _arguments \
+            "--debug-hooks[Launch a tmux session to debug hooks and/or actions.]"
+}
+
+function _juju_debug-log {
+    _arguments \
+            "--debug-log[Displays log messages for a model.]"
+}
+
+function _juju_deploy {
+    _arguments \
+            "--deploy[Deploys a new application or bundle.]"
+}
+
+function _juju_destroy-controller {
+    _arguments \
+            "--destroy-controller[Destroys a controller.]"
+}
+
+function _juju_destroy-model {
+    _arguments \
+            "--destroy-model[Terminate all machines/containers and resources for a non controller model.]"
+}
+
+function _juju_detach-storage {
+    _arguments \
+            "--detach-storage[Detaches storage from units.]"
+}
+
+function _juju_diff-bundle {
+    _arguments \
+            "--diff-bundle[Compare a bundle with a model and report any differences.]"
+}
+
+function _juju_disable-command {
+    _arguments \
+            "--disable-command[Disable commands for the model.]"
+}
+
+function _juju_disable-user {
+    _arguments \
+            "--disable-user[Disables a Juju user.]"
+}
+
+function _juju_disabled-commands {
+    _arguments \
+            "--disabled-commands[List disabled commands.]"
+}
+
+function _juju_download-backup {
+    _arguments \
+            "--download-backup[Get an archive file.]"
+}
+
+function _juju_enable-command {
+    _arguments \
+            "--enable-command[Enable commands that had been previously disabled.]"
+}
+
+function _juju_enable-destroy {
+    _arguments \
+            "--enable-destroy[controller     Enable destroy controller by removing disabled commands in the controller.]"
+}
+
+function _juju_enable-ha {
+    _arguments \
+            "--enable-ha[Ensure that sufficient controllers exist to provide redundancy.]"
+}
+
+function _juju_enable-user {
+    _arguments \
+            "--enable-user[Re enables a previously disabled Juju user.]"
+}
+
+function _juju_export-bundle {
+    _arguments \
+            "--export-bundle[Exports the current model configuration as a reusable bundle.]"
+}
+
+function _juju_expose {
+    _arguments \
+            "--expose[Makes an application publicly available over the network.]"
+}
+
+function _juju_find-offers {
+    _arguments \
+            "--find-offers[Find offered application endpoints.]"
+}
+
+function _juju_firewall-rules {
+    _arguments \
+            "--firewall-rules[Alias for 'list firewall rules'.]"
+}
+
+function _juju_get-constraints {
+    _arguments \
+            "--get-constraints[Displays machine constraints for an application.]"
+}
+
+function _juju_get-model {
+    _arguments \
+            "--get-model[constraints         Displays machine constraints for a model.]"
+}
+
+function _juju_grant {
+    _arguments \
+            "--grant[Grants access level to a Juju user for a model, controller, or application offer.]"
+}
+
+function _juju_grant-cloud {
+    _arguments \
+            "--grant-cloud[Grants access level to a Juju user for a cloud.]"
+}
+
+function _juju_gui {
+    _arguments \
+            "--gui[Print the Juju GUI URL, or open the Juju GUI in the default browser.]"
+}
+
+function _juju_help {
+    _arguments \
+            "--help[Show help on a command or other topic.]"
+}
+
+function _juju_help-tool {
+    _arguments \
+            "--help-tool[Alias for 'hook tool'.]"
+}
+
+function _juju_hook-tool {
+    _arguments \
+            "--hook-tool[Show help on a Juju charm hook tool.]"
+}
+
+function _juju_hook-tools {
+    _arguments \
+            "--hook-tools[Alias for 'hook tool'.]"
+}
+
+function _juju_import-filesystem {
+    _arguments \
+            "--import-filesystem[Imports a filesystem into the model.]"
+}
+
+function _juju_import-ssh {
+    _arguments \
+            "--import-ssh[key                Adds a public SSH key from a trusted identity source to a model.]"
+}
+
+function _juju_kill-controller {
+    _arguments \
+            "--kill-controller[Forcibly terminate all machines and other associated resources for a Juju controller.]"
+}
+
+function _juju_list-actions {
+    _arguments \
+            "--list-actions[Alias for 'actions'.]"
+}
+
+function _juju_list-agreements {
+    _arguments \
+            "--list-agreements[Alias for 'agreements'.]"
+}
+
+function _juju_list-backups {
+    _arguments \
+            "--list-backups[Alias for 'backups'.]"
+}
+
+function _juju_list-cached {
+    _arguments \
+            "--list-cached[images            Alias for 'cached images'.]"
+}
+
+function _juju_list-charm {
+    _arguments \
+            "--list-charm[resources          Alias for 'charm resources'.]"
+}
+
+function _juju_list-clouds {
+    _arguments \
+            "--list-clouds[Alias for 'clouds'.]"
+}
+
+function _juju_list-controllers {
+    _arguments \
+            "--list-controllers[Alias for 'controllers'.]"
+}
+
+function _juju_list-credentials {
+    _arguments \
+            "--list-credentials[Alias for 'credentials'.]"
+}
+
+function _juju_list-disabled {
+    _arguments \
+            "--list-disabled[commands        Alias for 'disabled commands'.]"
+}
+
+function _juju_list-firewall {
+    _arguments \
+            "--list-firewall[rules           Prints the firewall rules.]"
+}
+
+function _juju_list-machines {
+    _arguments \
+            "--list-machines[Alias for 'machines'.]"
+}
+
+function _juju_list-models {
+    _arguments \
+            "--list-models[Alias for 'models'.]"
+}
+
+function _juju_list-offers {
+    _arguments \
+            "--list-offers[Alias for 'offers'.]"
+}
+
+function _juju_list-payloads {
+    _arguments \
+            "--list-payloads[Alias for 'payloads'.]"
+}
+
+function _juju_list-plans {
+    _arguments \
+            "--list-plans[Alias for 'plans'.]"
+}
+
+function _juju_list-regions {
+    _arguments \
+            "--list-regions[Alias for 'regions'.]"
+}
+
+function _juju_list-resources {
+    _arguments \
+            "--list-resources[Alias for 'resources'.]"
+}
+
+function _juju_list-spaces {
+    _arguments \
+            "--list-spaces[Alias for 'spaces'.]"
+}
+
+function _juju_list-ssh {
+    _arguments \
+            "--list-ssh[keys                 Alias for 'ssh keys'.]"
+}
+
+function _juju_list-storage {
+    _arguments \
+            "--list-storage[pools            Alias for 'storage pools'.]"
+}
+
+function _juju_list-subnets {
+    _arguments \
+            "--list-subnets[Alias for 'subnets'.]"
+}
+
+function _juju_list-users {
+    _arguments \
+            "--list-users[Alias for 'users'.]"
+}
+
+function _juju_list-wallets {
+    _arguments \
+            "--list-wallets[Alias for 'wallets'.]"
+}
+
+function _juju_login {
+    _arguments \
+            "--login[Logs a user in to a controller.]"
+}
+
+function _juju_logout {
+    _arguments \
+            "--logout[Logs a Juju user out of a controller.]"
+}
+
+function _juju_machines {
+    _arguments \
+            "--machines[Lists machines in a model.]"
+}
+
+function _juju_metrics {
+    _arguments \
+            "--metrics[Retrieve metrics collected by specified entities.]"
+}
+
+function _juju_migrate {
+    _arguments \
+            "--migrate[Migrate a hosted model to another controller.]"
+}
+
+function _juju_model-config {
+    _arguments \
+            "--model-config[Displays or sets configuration values on a model.]"
+}
+
+function _juju_model-default {
+    _arguments \
+            "--model-default[Alias for 'model defaults'.]"
+}
+
+function _juju_model-defaults {
+    _arguments \
+            "--model-defaults[Displays or sets default configuration settings for a model.]"
+}
+
+function _juju_models {
+    _arguments \
+            "--models[Lists models a user can access on a controller.]"
+}
+
+function _juju_offer {
+    _arguments \
+            "--offer[Offer application endpoints for use in other models.]"
+}
+
+function _juju_offers {
+    _arguments \
+            "--offers[Lists shared endpoints.]"
+}
+
+function _juju_payloads {
+    _arguments \
+            "--payloads[Display status information about known payloads.]"
+}
+
+function _juju_plans {
+    _arguments \
+            "--plans[List plans.]"
+}
+
+function _juju_regions {
+    _arguments \
+            "--regions[Lists regions for a given cloud.]"
+}
+
+function _juju_register {
+    _arguments \
+            "--register[Registers a controller.]"
+}
+
+function _juju_relate {
+    _arguments \
+            "--relate                      - Alias for 'add[relation'.]"
+}
+
+function _juju_reload-spaces {
+    _arguments \
+            "--reload-spaces[Reloads spaces and subnets from substrate.]"
+}
+
+function _juju_remove-application {
+    _arguments \
+            "--remove-application[Remove applications from the model.]"
+}
+
+function _juju_remove-backup {
+    _arguments \
+            "--remove-backup[Remove the specified backup from remote storage.]"
+}
+
+function _juju_remove-cached {
+    _arguments \
+            "--remove-cached[images          Remove cached OS images.]"
+}
+
+function _juju_remove-cloud {
+    _arguments \
+            "--remove-cloud[Removes a user defined cloud from Juju.]"
+}
+
+function _juju_remove-consumed {
+    _arguments \
+            "--remove-consumed[application   Alias for 'remove saas'.]"
+}
+
+function _juju_remove-credential {
+    _arguments \
+            "--remove-credential[Removes locally stored credentials for a cloud.]"
+}
+
+function _juju_remove-k8s {
+    _arguments \
+            "--remove-k8s[Removes a k8s endpoint from Juju.]"
+}
+
+function _juju_remove-machine {
+    _arguments \
+            "--remove-machine[Removes one or more machines from a model.]"
+}
+
+function _juju_remove-offer {
+    _arguments \
+            "--remove-offer[Removes one or more offers specified by their URL.]"
+}
+
+function _juju_remove-relation {
+    _arguments \
+            "--remove-relation[Removes an existing relation between two applications.]"
+}
+
+function _juju_remove-saas {
+    _arguments \
+            "--remove-saas[Remove consumed applications (SAAS) from the model.]"
+}
+
+function _juju_remove-ssh {
+    _arguments \
+            "--remove-ssh[key                Removes a public SSH key (or keys) from a model.]"
+}
+
+function _juju_remove-storage {
+    _arguments \
+            "--remove-storage[pool           Remove an existing storage pool.]"
+}
+
+function _juju_remove-unit {
+    _arguments \
+            "--remove-unit[Remove application units from the model.]"
+}
+
+function _juju_remove-user {
+    _arguments \
+            "--remove-user[Deletes a Juju user from a controller.]"
+}
+
+function _juju_resolve {
+    _arguments \
+            "--resolve                     - Alias for 'resolved'.[]"
+}
+
+function _juju_resolved {
+    _arguments \
+            "--resolved                    - Marks unit errors resolved and re[executes failed hooks.]"
+}
+
+function _juju_resources {
+    _arguments \
+            "--resources[Show the resources for an application or unit.]"
+}
+
+function _juju_restore-backup {
+    _arguments \
+            "--restore-backup[Restore from a backup archive to the existing controller.]"
+}
+
+function _juju_resume-relation {
+    _arguments \
+            "--resume-relation[Resumes a suspended relation to an application offer.]"
+}
+
+function _juju_retry-provisioning {
+    _arguments \
+            "--retry-provisioning[Retries provisioning for failed machines.]"
+}
+
+function _juju_revoke {
+    _arguments \
+            "--revoke[Revokes access from a Juju user for a model, controller, or application offer.]"
+}
+
+function _juju_revoke-cloud {
+    _arguments \
+            "--revoke-cloud[Revokes access from a Juju user for a cloud.]"
+}
+
+function _juju_run {
+    _arguments \
+            "--run[Run the commands on the remote targets specified.]"
+}
+
+function _juju_run-action {
+    _arguments \
+            "--run-action[Queue an action for execution.]"
+}
+
+function _juju_scale-application {
+    _arguments \
+            "--scale-application[Set the desired number of application units.]"
+}
+
+function _juju_scp {
+    _arguments \
+            "--scp[Transfers files to/from a Juju machine.]"
+}
+
+function _juju_set-constraints {
+    _arguments \
+            "--set-constraints[Sets machine constraints for an application.]"
+}
+
+function _juju_set-credential {
+    _arguments \
+            "--set-credential[Relates a remote credential to a model.]"
+}
+
+function _juju_set-default {
+    _arguments \
+            "--set-default[region            Sets the default region for a cloud.]"
+}
+
+function _juju_set-firewall {
+    _arguments \
+            "--set-firewall[rule             Sets a firewall rule.]"
+}
+
+function _juju_set-meter {
+    _arguments \
+            "--set-meter[status              Sets the meter status on an application or unit.]"
+}
+
+function _juju_set-model {
+    _arguments \
+            "--set-model[constraints         Sets machine constraints on a model.]"
+}
+
+function _juju_set-plan {
+    _arguments \
+            "--set-plan[Set the plan for an application.]"
+}
+
+function _juju_set-series {
+    _arguments \
+            "--set-series[Set an application's series.]"
+}
+
+function _juju_set-wallet {
+    _arguments \
+            "--set-wallet[Set the wallet limit.]"
+}
+
+function _juju_show-action {
+    _arguments \
+            "--show-action[status            Show results of all actions filtered by optional ID prefix.]"
+}
+
+function _juju_show-application {
+    _arguments \
+            "--show-application[Displays information about an application.]"
+}
+
+function _juju_show-backup {
+    _arguments \
+            "--show-backup[Show metadata for the specified backup.]"
+}
+
+function _juju_show-cloud {
+    _arguments \
+            "--show-cloud[Shows detailed information on a cloud.]"
+}
+
+function _juju_show-controller {
+    _arguments \
+            "--show-controller[Shows detailed information of a controller.]"
+}
+
+function _juju_show-credential {
+    _arguments \
+            "--show-credential[Shows credential information on a controller.]"
+}
+
+function _juju_show-credentials {
+    _arguments \
+            "--show-credentials[Alias for 'show credential'.]"
+}
+
+function _juju_show-machine {
+    _arguments \
+            "--show-machine[Show a machine's status.]"
+}
+
+function _juju_show-model {
+    _arguments \
+            "--show-model[Shows information about the current or specified model.]"
+}
+
+function _juju_show-offer {
+    _arguments \
+            "--show-offer[Shows extended information about the offered application.]"
+}
+
+function _juju_show-status {
+    _arguments \
+            "--show-status[log               Output past statuses for the specified entity.]"
+}
+
+function _juju_show-storage {
+    _arguments \
+            "--show-storage[Shows storage instance information.]"
+}
+
+function _juju_show-user {
+    _arguments \
+            "--show-user[Show information about a user.]"
+}
+
+function _juju_show-wallet {
+    _arguments \
+            "--show-wallet[Show details about a wallet.]"
+}
+
+function _juju_sla {
+    _arguments \
+            "--sla[Set the SLA level for a model.]"
+}
+
+function _juju_spaces {
+    _arguments \
+            "--spaces[List known spaces, including associated subnets.]"
+}
+
+function _juju_ssh {
+    _arguments \
+            "--ssh[Initiates an SSH session or executes a command on a Juju machine.]"
+}
+
+function _juju_ssh-keys {
+    _arguments \
+            "--ssh-keys[Lists the currently known SSH keys for the current (or specified) model.]"
+}
+
+function _juju_status {
+    _arguments \
+            "--status                      - Alias for 'show[status'.]"
+}
+
+function _juju_storage {
+    _arguments \
+            "--storage[Lists storage details.]"
+}
+
+function _juju_storage-pools {
+    _arguments \
+            "--storage-pools[List storage pools.]"
+}
+
+function _juju_subnets {
+    _arguments \
+            "--subnets[List subnets known to Juju.]"
+}
+
+function _juju_suspend-relation {
+    _arguments \
+            "--suspend-relation[Suspends a relation to an application offer.]"
+}
+
+function _juju_switch {
+    _arguments \
+            "--switch[Selects or identifies the current controller and model.]"
+}
+
+function _juju_sync-agent {
+    _arguments \
+            "--sync-agent[binaries           Copy agent binaries from the official agent store into a local model.]"
+}
+
+function _juju_sync-tools {
+    _arguments \
+            "--sync-tools[Alias for 'sync agent binaries'.]"
+}
+
+function _juju_trust {
+    _arguments \
+            "--trust[Sets the trust status of a deployed application to true.]"
+}
+
+function _juju_unexpose {
+    _arguments \
+            "--unexpose[Removes public availability over the network for an application.]"
+}
+
+function _juju_unregister {
+    _arguments \
+            "--unregister[Unregisters a Juju controller.]"
+}
+
+function _juju_update-cloud {
+    _arguments \
+            "--update-cloud[Updates cloud information available to Juju.]"
+}
+
+function _juju_update-clouds {
+    _arguments \
+            "--update-clouds[Alias for 'update public clouds'.]"
+}
+
+function _juju_update-credential {
+    _arguments \
+            "--update-credential[Updates a controller credential for a cloud.]"
+}
+
+function _juju_update-public {
+    _arguments \
+            "--update-public[clouds          Updates public cloud information available to Juju.]"
+}
+
+function _juju_update-storage {
+    _arguments \
+            "--update-storage[pool           Update storage pool attributes.]"
+}
+
+function _juju_upgrade-charm {
+    _arguments \
+            "--upgrade-charm[Upgrade an application's charm.]"
+}
+
+function _juju_upgrade-controller {
+    _arguments \
+            "--upgrade-controller[Upgrades Juju on a controller.]"
+}
+
+function _juju_upgrade-gui {
+    _arguments \
+            "--upgrade-gui[Upgrade to a new Juju GUI version.]"
+}
+
+function _juju_upgrade-juju {
+    _arguments \
+            "--upgrade-juju[Alias for 'upgrade model'.]"
+}
+
+function _juju_upgrade-model {
+    _arguments \
+            "--upgrade-model[Upgrades Juju on all machines in a model.]"
+}
+
+function _juju_upgrade-series {
+    _arguments \
+            "--upgrade-series[Upgrade the Ubuntu series of a machine.]"
+}
+
+function _juju_upload-backup {
+    _arguments \
+            "--upload-backup[Store a backup archive file remotely in Juju.]"
+}
+
+function _juju_users {
+    _arguments \
+            "--users[Lists Juju users allowed to connect to a controller or model.]"
+}
+
+function _juju_version {
+    _arguments \
+            "--version[Print the current version.]"
+}
+
+function _juju_wallets {
+    _arguments \
+            "--wallets[List wallets.]"
+}
+
+function _juju_whoami {
+    _arguments \
+            "--whoami[Print current login details.]"
+}
+
